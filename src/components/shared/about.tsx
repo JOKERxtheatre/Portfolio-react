@@ -3,7 +3,10 @@ import Me from "@/assets/Без названия16_20231221203142.png";
 
 const About = () => {
   return (
-    <div className="About-section flex items-center justify-center w-full py-24 md:py-16 px-2 container" id="about">
+    <div
+      className="About-section flex items-center justify-center w-full py-24 md:py-16 px-2 container"
+      id="about"
+    >
       <div className="About flex flex-col items-center justify-center w-full">
         <Badge
           variant="default"
@@ -23,58 +26,64 @@ const About = () => {
             <div className="flex items-center justify-center w-[400px] h-[400px] border-[8px] border-background absolute bg-accent-foreground/25 mt-10"></div>
           </div>
           <div className="header-image flex items-end justify-center w-[300px] h-[270px] 2xl:hidden md:flex">
-          <div
-            className="flex items-center justify-center w-[272px] h-[272px] border-[8px] border-background z-10 mb-5"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <img src={Me} alt="my=image" className="w-full" />
+            <div
+              className="flex items-center justify-center w-[272px] h-[272px] border-[8px] border-background z-10 mb-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img src={Me} alt="my=image" className="w-full" />
+            </div>
+            <div className="flex items-center justify-center w-[312px] h-[272px] border-[8px] border-background absolute bg-accent-foreground/25"></div>
           </div>
-          <div className="flex items-center justify-center w-[312px] h-[272px] border-[8px] border-background absolute bg-accent-foreground/25"></div>
-        </div>
           <div className="text max-w-[584px] text-foreground/65 gap-4 flex flex-col mt-10">
-            <h1 className="text-3xl font-semibold text-foreground pb-2">Curious about me? Here you have it:</h1>
+            <h1 className="text-3xl font-semibold text-foreground pb-2">
+              Curious about me? Here you have it:
+            </h1>
             <h3>
-              I'm a passionate, self-proclaimed designer who specializes in full
-              stack development (React.js & Node.js). I am very enthusiastic
-              about bringing the technical and visual aspects of digital
-              products to life. User experience, pixel perfect design, and
-              writing clear, readable, highly performant code matters to me.
+              I'm a passionate, self-motivated designer specializing in
+              near-full-stack development (React.js & Node.js, Express.js). I am
+              passionate about bringing the technical and visual aspects of
+              digital products to life. User experience, pixel-perfect design,
+              and writing clear, readable, high-performance code are all
+              important to me.
             </h3>
             <h3>
-              I began my journey as a web developer in 2015, and since then,
-              I've continued to grow and evolve as a developer, taking on new
+              I started my journey as a web developer in 2023 and since then I
+              have continued to grow and develop as a developer, taking on new
               challenges and learning the latest technologies along the way.
-              Now, in my early thirties, 7 years after starting my web
-              development journey, I'm building cutting-edge web applications
-              using modern technologies such as Next.js, TypeScript, Nestjs,
-              Tailwindcss, Supabase and much more.
+              Now, since I started my web development journey at the early age
+              of sixteen, I have been building modern web applications using
+              modern technologies like Next.js, TypeScript, Express.js,
+              Tailwindcss, JavaScript and many more.
             </h3>
             <h3>
-              I am very much a progressive thinker and enjoy working on products
-              end to end, from ideation all the way to development.
+              I am a very forward thinker and enjoy working on products from
+              idea to development.
             </h3>
             <h3>
-              When I'm not in full-on developer mode, you can find me hovering
-              around on twitter or on indie hacker, witnessing the journey of
-              early startups or enjoying some free time. You can follow me on
-              Twitter where I share tech-related bites and build in public, or
-              you can follow me on GitHub.
+              When I'm not in full developer mode, you can find me scrolling
+              through instagram or telegram, witnessing the journey of startups,
+              or spending my free time. You can follow me on Instagram where I
+              share tech tidbits and build in public, or you can follow me on
+              GitHub.
             </h3>
             <h3>Finally, some quick bits about me.</h3>
             <div className="flex items-center justify-between">
-              <ul role="list" className="marker:text-foreground/65 list-disc pl-4">
-                <li>B.E. in Computer Engineering</li>
-                <li>Full time freelancer</li>
+              <ul
+                role="list"
+                className="marker:text-foreground/65 list-disc pl-4"
+              >
+                <li>Jr. Web developer</li>
+                <li>Part-time freelancer</li>
               </ul>
-              <ul  role="list" className="marker:text-foreground/65 list-disc">
+              <ul role="list" className="marker:text-foreground/65 list-disc">
                 <li>Avid learner</li>
-                <li>Aspiring indie hacker</li>
+                <li>Senior aspiring</li>
               </ul>
             </div>
             <h3>
-              One last thing, I'm available for freelance work, so feel free to
-              reach out and say hello! I promise I don't bite 😉
+              Last thing, I'm available to work with the team, so feel free to
+              reach out and say hi! I promise I won't bite 😉
             </h3>
           </div>
         </div>
