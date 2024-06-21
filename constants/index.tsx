@@ -695,6 +695,52 @@ export const Experiences = [
 
 export const Works = [
   {
+    image: "https://i.postimg.cc/nLDVYZSf/2024-06-21-090020.png",
+    title: "Car Rental",
+    text: "Mashinalarni ko'rish va yoqqanini ijaraga olish imkoniyati.",
+    works: [
+      {
+        work: "Next.js",
+      },
+      {
+        work: "Typescript",
+      },
+      {
+        work: "Css",
+      },
+      {
+        work: "Daisy/ui",
+      },
+      {
+        work: "Git",
+      },
+      {
+        work: "React-hook-form",
+      },
+      {
+        work: "Hygraph",
+      },
+      {
+        work: "Clerk",
+      },
+      {
+        work: "GraphQL",
+      },
+      {
+        work: "Shadcn/ui",
+      },
+      {
+        work: "Radix/ui",
+      },
+      {
+        work: "Clipboard/copy",
+      },
+    ],
+    link: "https://car-rentalx.netlify.app/",
+    movement: "zoom-in",
+    duration: "300",
+  },
+  {
     image: "https://i.postimg.cc/ncwD07gR/2024-05-25-190347.png",
     title: "Cusers",
     text: "Userlarni qo'shish va ularni o'chirish.",
