@@ -695,6 +695,67 @@ export const Experiences = [
 
 export const Works = [
   {
+    image: "https://i.postimg.cc/rsRczHWv/2024-08-11-165223.png",
+    title: "Car Rental",
+    text: "Bu projectda men jetour avto salonining saytining nusxasini yasadim ya'ni uni yanayam yaxshiroq va funksayalarga boyitgan xolda bemalol kirib solishtirib foydalanishingiz mumkin.👍",
+    works: [
+      {
+        work: "Next.js",
+      },
+      {
+        work: "Typescript",
+      },
+      {
+        work: "Css",
+      },
+      {
+        work: "Next/ui",
+      },
+      {
+        work: "Git",
+      },
+      {
+        work: "React-hook-form",
+      },
+      {
+        work: "Hygraph",
+      },
+      {
+        work: "GraphQL",
+      },
+      {
+        work: "Shadcn/ui",
+      },
+      {
+        work: "Radix/ui",
+      },
+      {
+        work: "Clipboard/copy",
+      },
+      {
+        work:'Prime react'
+      },
+      {
+        work:'Next themes'
+      },
+      {
+        work:'Framer motion'
+      },
+      {
+        work:'Next intl'
+      },
+      {
+        work:'Date fns'
+      },
+      {
+        work:'Swiper'
+      }
+    ],
+    link: "https://jetour-uzbekistan.netlify.app/",
+    movement: "zoom-in",
+    duration: "300",
+  },
+  {
     image: "https://i.postimg.cc/nLDVYZSf/2024-06-21-090020.png",
     title: "Car Rental",
     text: "Mashinalarni ko'rish va yoqqanini ijaraga olish imkoniyati.",
