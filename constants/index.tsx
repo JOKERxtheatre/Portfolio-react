@@ -696,7 +696,7 @@ export const Experiences = [
 export const Works = [
   {
     image: "https://i.postimg.cc/rsRczHWv/2024-08-11-165223.png",
-    title: "Car Rental",
+    title: "JETOUR",
     text: "Bu projectda men jetour avto salonining saytining nusxasini yasadim ya'ni uni yanayam yaxshiroq va funksayalarga boyitgan xolda bemalol kirib solishtirib foydalanishingiz mumkin.👍",
     works: [
       {
@@ -798,6 +798,34 @@ export const Works = [
       },
     ],
     link: "https://car-rentalx.netlify.app/",
+    movement: "zoom-in",
+    duration: "300",
+  },
+  {
+    image: "https://i.postimg.cc/prSsHcFV/2024-08-15-182221.png",
+    title: "Tools",
+    text: "Bu projectda bazi bir sohalar uchun kerak bo'ladigan texnalogiyalarni jamladim va siz ularni sohani tanlash orqali bilib olishingiz mumkin.",
+    works: [
+      {
+        work: "Next.js",
+      },
+      {
+        work: "Typescript",
+      },
+      {
+        work: "Css",
+      },
+      {
+        work: "JQuery",
+      },
+      {
+        work: "Git",
+      },
+      {
+        work: "React-responsive",
+      },
+    ],
+    link: "https://check-tools.netlify.app/",
     movement: "zoom-in",
     duration: "300",
   },
