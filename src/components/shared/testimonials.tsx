@@ -4,7 +4,7 @@ import { testimonials } from "../../../constants/index";
 
 const Testimonials = () => {
   return (
-    <div className="Testimonials-section flex items-center justify-center w-full py-24 md:py-16 px-2 container">
+    <div className="Testimonials-section flex items-center justify-center w-full py-24 md:py-16 px-2 container" id="testimonials">
       <div className="Testimonials flex flex-col items-center justify-center w-full gap-y-12">
         <div className="flex flex-col items-center justify-center">
           <Badge

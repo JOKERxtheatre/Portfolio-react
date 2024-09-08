@@ -7,7 +7,6 @@ import { FaInstagram } from "react-icons/fa";
 const GetInTouch = () => {
   const { toast } = useToast();
   const [copiedText, copy] = useCopyToClipboard();
-  console.log(copiedText);
   const handleCopy = (text: string) => () => {
     copy(text)
       .then(() => {
@@ -19,10 +18,11 @@ const GetInTouch = () => {
       })
       .catch((error) => {
         console.error("Failed to copy!", error);
+        console.log(copiedText);
       });
   };
   return (
-    <div className="GetInTouch-section flex items-center justify-center w-full py-24 md:py-16 px-2 container">
+    <div className="GetInTouch-section flex items-center justify-center w-full py-24 md:py-16 px-2 container" id="contact">
       <div className="GetInTouch flex flex-col items-center justify-center w-full gap-y-12 md:gap-y-6">
         <div className="flex flex-col items-center justify-center">
           <Badge

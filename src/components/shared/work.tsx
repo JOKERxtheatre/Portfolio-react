@@ -5,14 +5,14 @@ import { Works } from "../../../constants/index";
 
 const Work = () => {
   return (
-    <div className="Work-section flex items-center justify-center w-full py-24 md:py-16 px-2 container">
+    <div className="Work-section flex items-center justify-center w-full py-24 md:py-16 px-2 container" id="work">
       <div className="Work flex flex-col items-center justify-center w-full gap-y-12">
         <div className="flex flex-col items-center justify-center">
           <Badge
             variant="default"
             className="rounded-xl bg-accent text-foreground py-1 px-4"
           >
-            Work
+            Works
           </Badge>
           <h2 className="text-lg font-medium text-foreground/65 mt-4 text-center">
             Some of the noteworthy projects I have built:

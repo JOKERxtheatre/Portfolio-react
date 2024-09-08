@@ -1,10 +1,21 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { ModeToggle } from "./mode-toggle";
 import { Button } from "../ui/button";
 import { MdClose } from "react-icons/md";
 import { Separator } from "../ui/separator";
+import file from "../../assets/Xumoyun's Resume.pdf"
 
 const Navbar = () => {
+  const closeDrawer = () => {
+    const drawerCheckbox = document.getElementById(
+      "my-drawer"
+    ) as HTMLInputElement;
+    if (drawerCheckbox) {
+      drawerCheckbox.checked = false;
+    }
+  };
+
   return (
     <div className="Navbar-section w-full container md:px-0">
       <div className="Navbar-section flex w-full py-4 items-center justify-between md:px-4">
@@ -18,51 +29,58 @@ const Navbar = () => {
             <ul className="flex gap-6">
               <li className="hover:text-blue-700 ease-in-out duration-150">
                 <Link
-                  to="/"
-                  onClick={() => {
-                    window.scroll({
-                      behavior: "smooth",
-                      top: 700,
-                    });
-                  }}
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={1000}
                 >
                   About
                 </Link>
               </li>
               <li className="hover:text-blue-700 ease-in-out duration-150">
-                <Link to="/" onClick={() => {
-                    window.scroll({
-                      behavior: "smooth",
-                      top: 3000,
-                    });
-                  }}>Work</Link>
+                <Link
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={1000}
+                >
+                  Works
+                </Link>
               </li>
               <li className="hover:text-blue-700 ease-in-out duration-150">
-                <Link to="/" onClick={() => {
-                    window.scroll({
-                      behavior: "smooth",
-                      top: 6000,
-                    });
-                  }}>Testimonials</Link>
+                <Link
+                  to="testimonials"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={1000}
+                >
+                  Testimonials
+                </Link>
               </li>
               <li className="hover:text-blue-700 ease-in-out duration-150">
-                <Link to="/" onClick={() => {
-                    window.scroll({
-                      behavior: "smooth",
-                      top: 7000,
-                    });
-                  }}>Contact</Link>
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={1000}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
           <div className="flex gap-4">
             <ModeToggle />
 
-            <Link to={"https://t.me/QXumoyun"} target="_blank">
-              <Button className="rounded-xl h-[36px]" type="submit">
-                Send Message
+            <a href={file} download="Xumoyun_Resume.pdf">
+              <Button className="rounded-xl h-[36px]" type="button">
+                Download CV
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="nav-right-mobile md:flex 2xl:hidden">
@@ -152,48 +170,53 @@ const Navbar = () => {
                   </div>
                   <Separator />
                 </div>
-                <ul className=" text-foreground">
+                <ul className="text-foreground">
                   {/* Sidebar content here */}
                   <li className="hover:text-blue-700 ease-in-out duration-150">
                     <Link
-                      to="/"
-                      onClick={() => {
-                        window.scroll({
-                          behavior: "smooth",
-                          top: 1050,
-                        });
-                      }}
+                      to="about"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={1000}
+                      onClick={closeDrawer} // Close the drawer
                     >
                       About
                     </Link>
                   </li>
                   <li className="hover:text-blue-700 ease-in-out duration-150">
-                    <Link to="/" className="text-foreground" onClick={() => {
-                    window.scroll({
-                      behavior: "smooth",
-                      top: 4100,
-                    });
-                  }}>
-                      Work
+                    <Link
+                      to="work"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={1000}
+                      onClick={closeDrawer} // Close the drawer
+                    >
+                      Works
                     </Link>
                   </li>
                   <li className="hover:text-blue-700 ease-in-out duration-150">
-                    <Link to="/" className="text-foreground" onClick={() => {
-                    window.scroll({
-                      behavior: "smooth",
-                      top: 7750,
-                    });
-                  }}>
+                    <Link
+                      to="testimonials"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={1000}
+                      onClick={closeDrawer} // Close the drawer
+                    >
                       Testimonials
                     </Link>
                   </li>
                   <li className="hover:text-blue-700 ease-in-out duration-150">
-                    <Link to="/" className="text-foreground"onClick={() => {
-                    window.scroll({
-                      behavior: "smooth",
-                      top: 11000,
-                    });
-                  }}>
+                    <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={1000}
+                      onClick={closeDrawer} // Close the drawer
+                    >
                       Contact
                     </Link>
                   </li>
@@ -203,14 +226,14 @@ const Navbar = () => {
                   <div className="w-full mt-4 flex flex-col px-4">
                     <ModeToggle />
 
-                    <Link to={"https://t.me/QXumoyun"} target="_blank">
+                    <a href={file}  download="Xumoyun_Resume.pdf">
                       <Button
                         className="rounded-xl h-[36px] bg-foreground mt-14 w-full"
                         type="submit"
                       >
-                        Send Message
+                        Download CV
                       </Button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
